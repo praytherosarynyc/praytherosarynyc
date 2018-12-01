@@ -3,7 +3,7 @@
 $recipientList = array();//Full array
 $recipient = array();//Individual Name/Email
 
-$recipient[] = array('name'=> $_REQUEST['name'], 'mail'=> $_REQUEST['mail']);
+$recipient = array('name'=> $_REQUEST['name'], 'mail'=> $_REQUEST['mail']);
 
 array_push($recipientList, $recipient);
 
