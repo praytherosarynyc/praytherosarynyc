@@ -14,6 +14,10 @@ ROOT FOLDER:
 
   results.json - email list formatted [{"name": name, "mail": email}]
 
+  newsletter.html - Page to send newsletter blasts. format is still in progress
+
+  newsletter.php - php for handling newsletter blasts
+
   templateprofilepic.png - logo image
 
 DEV FOLDER:
