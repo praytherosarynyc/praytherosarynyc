@@ -21,7 +21,7 @@ file_put_contents('results.json', $jsonData);
 $subject = "Thanks for Subscribing!";
 
 # RESULT PAGE
-$location = "http://praytherosary.nyc/index.html";
+$location = "http://praytherosary.nyc/";
 
 ## FORM VALUES ##
 
