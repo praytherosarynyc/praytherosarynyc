@@ -12,6 +12,12 @@ body{
   text-align: center;
 }
 
+#beta{
+  font-size: 2vw;
+  color: blue;
+  text-decoration: none;
+}
+
 .title{
   display: inline-block;
   position: relative;
@@ -102,6 +108,12 @@ footer{
                 linear-gradient(127deg, #caccc7, #D8FC99),
                 linear-gradient(336deg, #ecfdce, #caccc7);
     text-align: center;
+  }
+
+  #beta{
+    font-size: 5vw;
+    color: blue;
+    text-decoration: none;
   }
 
   .title{
@@ -195,6 +207,12 @@ footer{
     text-align: center;
   }
 
+  #beta{
+    font-size: 5vw;
+    color: blue;
+    text-decoration: none;
+  }
+
   .title{
     display: inline-block;
     position: relative;
@@ -286,6 +304,12 @@ footer{
     text-align: center;
   }
 
+  #beta{
+    font-size: 5vw;
+    color: blue;
+    text-decoration: none;
+  }
+
   .title{
     display: inline-block;
     position: relative;
@@ -375,6 +399,12 @@ footer{
                 linear-gradient(127deg, #caccc7, #D8FC99),
                 linear-gradient(336deg, #ecfdce, #caccc7);
     text-align: center;
+  }
+
+  #beta{
+    font-size: 5vw;
+    color: blue;
+    text-decoration: none;
   }
 
   .title{
