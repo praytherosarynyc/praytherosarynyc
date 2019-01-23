@@ -1,0 +1,384 @@
+
+  body{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 1px;
+    font-family: 'Michroma', sans-serif;
+    font-family: 'Amiri', serif;
+    background-color: #D8FC99;
+  }
+
+  .title{
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+
+  .title a{
+    display: inline-block;
+    position: relative;
+    font-size: 5vw;
+    font-size: 5vh;
+    font-family: 'Pattaya', sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+
+  .basicBody{
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    scroll-snap-type: y mandatory; /* Chrome Canary */
+    scroll-snap-type: mandatory; /* Firefox */
+    -ms-scroll-snap-type: mandatory; /* IE/Edge */
+    -webkit-scroll-snap-type: mandatory; /* Safari */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-stop: always;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  section {
+    scroll-snap-align: start;
+    scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
+    -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+    width: 100vw;
+    height: auto;
+  }
+
+.optionTitle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10;
+    font-size: 4vw;
+    font-size: 4vh;
+  }
+
+img{
+    position: relative;
+    display: flex;
+    width: 40vw;
+    height: auto;
+    margin: 5% 30% 5% 30%;
+    justify-content: center;
+  }
+
+.prayerTitle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    font-size: 4vh;
+    margin-top: 20;
+  }
+
+.prayerBody{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    font-size: 3vh;
+    margin-top: 20;
+    margin-bottom: 20;
+    padding: 15;
+    font-family: 'Michroma', sans-serif;
+  }
+
+@media screen and (max-width: 992px){
+
+    body{
+      display: block;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 1px;
+      font-family: 'Michroma', sans-serif;
+      font-family: 'Amiri', serif;
+      background-color: D8FC99;
+    }
+
+    .title{
+      display: inline-block;
+      position: relative;
+      width: 100vw;
+      text-align: center;
+      background-color: D8FC99;
+      border-bottom: 1px solid black;
+    }
+
+    .title a{
+      display: inline-block;
+      position: relative;
+      font-size: 5vw;
+      font-size: 5vh;
+      background-color: D8FC99;
+      font-family: 'Pattaya', sans-serif;
+      color: black;
+      text-decoration: none;
+    }
+
+    .basicBody{
+      position: relative;
+      width: 100vw;
+      text-align: center;
+      background-color: D8FC99;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      scroll-snap-type: y mandatory; /* Chrome Canary */
+      scroll-snap-type: mandatory; /* Firefox */
+      -ms-scroll-snap-type: mandatory; /* IE/Edge */
+      -webkit-scroll-snap-type: mandatory; /* Safari */
+      overflow-y: scroll;
+      overflow-x: hidden;
+      scroll-snap-stop: always;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    section {
+      scroll-snap-align: start;
+      scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
+      -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+      width: 100vw;
+      height: auto;
+    }
+
+  .optionTitle{
+      position: relative;
+      display: flex;
+      margin-top: 10;
+      font-size: 4vw;
+      font-size: 4vh;
+    }
+
+  img{
+      position: relative;
+      display: flex;
+      margin: 5% 25% 5% 25%;
+      width: 50vw;
+      height: auto;
+    }
+
+  .prayerTitle{
+      position: relative;
+      display: flex;
+      font-size: 4vw;
+      font-size: 4vh;
+      margin-top: 20;
+    }
+
+  .prayerBody{
+      position: relative;
+      display: flex;
+      font-size: 3vw;
+      font-size: 3vh;
+      margin-top: 20;
+      margin-bottom: 20;
+      padding: 15;
+      font-family: 'Michroma', sans-serif;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+  body{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 1px;
+    font-family: 'Michroma', sans-serif;
+    font-family: 'Amiri', serif;
+    background-color: D8FC99;
+  }
+
+  .title{
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    background-color: D8FC99;
+    border-bottom: 1px solid black;
+  }
+
+  .title a{
+    display: inline-block;
+    position: relative;
+    font-size: 5vw;
+    font-size: 5vh;
+    background-color: D8FC99;
+    font-family: 'Pattaya', sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+
+  .basicBody{
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    background-color: D8FC99;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    scroll-snap-type: y mandatory; /* Chrome Canary */
+    scroll-snap-type: mandatory; /* Firefox */
+    -ms-scroll-snap-type: mandatory; /* IE/Edge */
+    -webkit-scroll-snap-type: mandatory; /* Safari */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-stop: always;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  section {
+    scroll-snap-align: start;
+    scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
+    -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+    width: 100vw;
+    height: auto;
+  }
+
+  .optionTitle{
+    position: relative;
+    display: flex;
+    margin-top: 10;
+    font-size: 5vw;
+    font-size: 5vh;
+  }
+
+img{
+    position: relative;
+    display: flex;
+    margin: 5% 25% 5% 25%;
+    width: 50vw;
+    height: auto;
+  }
+
+  .prayerTitle{
+    position: relative;
+    display: flex;
+    font-size: 6vw;
+    font-size: 5vh;
+    margin-top: 20;
+  }
+
+  .prayerBody{
+    position: relative;
+    display: flex;
+    font-size: 3vw;
+    font-size: 3vh;
+    margin-top: 20;
+    margin-bottom: 20;
+    padding: 15;
+    font-family: 'Michroma', sans-serif;
+  }
+}
+
+
+@media screen and (max-width: 350px){
+
+  body{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 1px;
+    font-family: 'Michroma', sans-serif;
+    font-family: 'Amiri', serif;
+    background-color: D8FC99;
+  }
+
+  .title{
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    background-color: D8FC99;
+    border-bottom: 1px solid black;
+  }
+
+  .title a{
+    display: inline-block;
+    position: relative;
+    font-size: 5vw;
+    font-size: 5vh;
+    background-color: D8FC99;
+    font-family: 'Pattaya', sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+
+  .basicBody{
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    background-color: D8FC99;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    scroll-snap-type: y mandatory; /* Chrome Canary */
+    scroll-snap-type: mandatory; /* Firefox */
+    -ms-scroll-snap-type: mandatory; /* IE/Edge */
+    -webkit-scroll-snap-type: mandatory; /* Safari */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-stop: always;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  section {
+    scroll-snap-align: start;
+    scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
+    -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+    width: 100vw;
+    height: auto;
+  }
+
+.optionTitle{
+    position: relative;
+    display: flex;
+    margin-top: 10;
+    font-size: 4vw;
+    font-size: 4vh;
+  }
+
+img{
+    position: relative;
+    display: flex;
+    margin: 10% 25% 10% 25%;
+    width: 50vw;
+    height: auto;
+  }
+
+.prayerTitle{
+    position: relative;
+    display: flex;
+    font-size: 4vw;
+    font-size: 4vh;
+    margin-top: 20;
+  }
+
+.prayerBody{
+    position: relative;
+    display: flex;
+    font-size: 3vw;
+    font-size: 3vh;
+    margin-top: 20;
+    margin-bottom: 20;
+    min-height: 740px;
+    padding: 15;
+    font-family: 'Michroma', sans-serif;
+  }
+}
