@@ -1,3 +1,10 @@
+:root{
+  --fallbackFont: 'Lato', sans-serif;
+  --oldFont: 'Michroma', sans-serif;
+  --oldFonts:  'Amiri', serif;
+  --bodyFont: 'Esteban', serif;
+  --titleFont: 'Alegreya Sans', sans-serif;
+}
 
   body{
     display: block;
@@ -6,8 +13,8 @@
     height: auto;
     margin: 0;
     padding: 1px;
-    font-family: 'Michroma', sans-serif;
-    font-family: 'Amiri', serif;
+    font-family: var(--titleFont);
+    font-family: var(--bodyFont);
     background-color: #D8FC99;
   }
 
@@ -24,7 +31,8 @@
     position: relative;
     font-size: 5vw;
     font-size: 5vh;
-    font-family: 'Pattaya', sans-serif;
+    font-family: var(--titleFont);
+    font-weight: normal;
     color: black;
     text-decoration: none;
   }
@@ -79,6 +87,8 @@ img{
     font-size: 4vw;
     font-size: 4vh;
     margin-top: 20;
+    font-family: var(--titleFont);
+    font-weight: bold;
   }
 
 .prayerBody{
@@ -90,7 +100,8 @@ img{
     margin-top: 20;
     margin-bottom: 20;
     padding: 15;
-    font-family: 'Michroma', sans-serif;
+    font-family: var(--bodyFont);
+    font-weight: 550;
   }
 
 @media screen and (max-width: 992px){
@@ -102,8 +113,8 @@ img{
       height: 100vh;
       margin: 0;
       padding: 1px;
-      font-family: 'Michroma', sans-serif;
-      font-family: 'Amiri', serif;
+      font-family: var(--titleFont);
+      font-family: var(--bodyFont);
       background-color: D8FC99;
     }
 
@@ -122,7 +133,7 @@ img{
       font-size: 5vw;
       font-size: 5vh;
       background-color: D8FC99;
-      font-family: 'Pattaya', sans-serif;
+      font-family: var(--titleFont);
       color: black;
       text-decoration: none;
     }
@@ -175,6 +186,8 @@ img{
       font-size: 4vw;
       font-size: 4vh;
       margin-top: 20;
+      font-family: var(--titleFont);
+      font-weight: bold;
     }
 
   .prayerBody{
@@ -185,7 +198,8 @@ img{
       margin-top: 20;
       margin-bottom: 20;
       padding: 15;
-      font-family: 'Michroma', sans-serif;
+      font-family: var(--bodyFont);
+      font-weight: 550;
     }
 }
 
@@ -198,8 +212,8 @@ img{
     height: 100vh;
     margin: 0;
     padding: 1px;
-    font-family: 'Michroma', sans-serif;
-    font-family: 'Amiri', serif;
+    font-family: var(--titleFont);
+    font-family: var(--bodyFont);
     background-color: D8FC99;
   }
 
@@ -218,7 +232,7 @@ img{
     font-size: 5vw;
     font-size: 5vh;
     background-color: D8FC99;
-    font-family: 'Pattaya', sans-serif;
+    font-family: var(--titleFont);
     color: black;
     text-decoration: none;
   }
@@ -271,6 +285,8 @@ img{
     font-size: 6vw;
     font-size: 5vh;
     margin-top: 20;
+    font-family: var(--titleFont);
+    font-weight: bold;
   }
 
   .prayerBody{
@@ -281,7 +297,8 @@ img{
     margin-top: 20;
     margin-bottom: 20;
     padding: 15;
-    font-family: 'Michroma', sans-serif;
+    font-family: var(--bodyFont);
+    font-weight: 550;
   }
 }
 
@@ -295,8 +312,8 @@ img{
     height: 100vh;
     margin: 0;
     padding: 1px;
-    font-family: 'Michroma', sans-serif;
-    font-family: 'Amiri', serif;
+    font-family: var(--titleFont);
+    font-family: var(--bodyFont);
     background-color: D8FC99;
   }
 
@@ -315,7 +332,7 @@ img{
     font-size: 5vw;
     font-size: 5vh;
     background-color: D8FC99;
-    font-family: 'Pattaya', sans-serif;
+    font-family: var(--titleFont);
     color: black;
     text-decoration: none;
   }
@@ -368,6 +385,8 @@ img{
     font-size: 4vw;
     font-size: 4vh;
     margin-top: 20;
+    font-family: var(--titleFont);
+    font-weight: bold;
   }
 
 .prayerBody{
@@ -379,6 +398,7 @@ img{
     margin-bottom: 20;
     min-height: 740px;
     padding: 15;
-    font-family: 'Michroma', sans-serif;
+    font-family: var(--bodyFont);
+    font-weight: 550;
   }
 }
