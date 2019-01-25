@@ -1,7 +1,7 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/user/public_html/
+ - export DEPLOYPATH=/home/upraythe5/public_html/
  - / index.html $DEPLOYPATH
  - / privacypolicy.html $DEPLOYPATH
   - /-R stylesheets $DEPLOYPATH/stylesheets
