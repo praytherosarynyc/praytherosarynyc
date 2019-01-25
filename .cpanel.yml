@@ -1,0 +1,8 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/user/public_html/
+ - / index.html $DEPLOYPATH
+ - / privacypolicy.html $DEPLOYPATH
+  - /-R stylesheets $DEPLOYPATH/stylesheets
+ - / -R images $DEPLOYPATH/images
