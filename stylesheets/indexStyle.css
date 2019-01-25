@@ -35,7 +35,7 @@
     position: relative;
     font-size: 5vw;
     font-size: 5vh;
-    font-family: var(--titleFont);
+    font-family: var(--oldFonts);
     font-weight: normal;
     color: var(--text);
     text-decoration: none;
@@ -140,7 +140,7 @@ img{
       font-size: 5vw;
       font-size: 5vh;
       background-color: var(--background);
-      font-family: var(--titleFont);
+      font-family: var(--oldFonts);
       color: var(--text);
       text-decoration: none;
     }
@@ -242,7 +242,7 @@ img{
     font-size: 5vw;
     font-size: 5vh;
     background-color: var(--background);
-    font-family: var(--titleFont);
+    font-family: var(--oldFonts);
     color: var(--text);
     text-decoration: none;
   }
@@ -345,7 +345,7 @@ img{
     font-size: 5vw;
     font-size: 5vh;
     background-color: var(--background);
-    font-family: var(--titleFont);
+    font-family: var(--oldFonts);
     color: var(--text);
     text-decoration: none;
   }
