@@ -1,45 +1,475 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128992215-1"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128992215-1"></script>
 
-		gtag('config', 'UA-128992215-1');
+    <!--Google Analytics Continued-->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-	</script>
-	<link rel = "stylesheet" type = "text/css" href = "./stylesheets/indexStyle.css" />
-	<title>pray the rosary</title>
-</head>
-<body>
+      gtag('config', 'UA-128992215-1');
+    </script>
 
-	<div class="title">
-		<a href="http://praytherosary.nyc" class="title">pray the rosary<a>
-	</div>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Michroma|Pattaya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
 
-	<div class="zoomedOut">
-		<img class="zoomedOut" id="image" src="./images/templateprofilepic.png" alt="logo" width="500" height="500" >
-		<div class="zoomedIn">
-			<a href="../../dev/index.html" id="beta">Try Beta</a>
-			<form autocomplete="off" method="POST" class="container" action="../../php/subscribe.php">
-				<div class="container" style="background-color:white">
-					<input class="field" type="text" placeholder="Name" name="name" required>
-					<input class="field" type="text" placeholder="Email address" name="mail" required>
-					<input id="submit" class="field" type="submit" value="Subscribe">
-				</div>
-			</form>
-		</div>
-	</div>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100|Lato:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Esteban" rel="stylesheet">
 
-	<footer>
-		Copyright 2019. James O. and Kevin C.
-		<a href="privacypolicy.html">Privacy Policy</a>
-	</footer>
+    <!--Stylesheet-->
+    <link rel = "stylesheet" type = "text/css" href = "./stylesheets/indexStyle.css">
 
-</body>
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!--Media Queries-->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  </head>
+  <body>
+    <script>
+
+      var date = new Date();
+      var today = date.getDay();
+
+      var startTitle = "Scroll to begin";
+      var startBody = "Welcome to Pray the Rosary!";
+
+      var signCross = "Make the Sign of the Cross";
+      var creedTitle = "Pray the Apostle's Creed";
+      var apositlesCreed = "I believe in God, the Father Almighty, Creator of Heaven and earth, and in Jesus Christ, His only Son, Our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; He descended into Hell; on the third day He arose again from the dead; He ascended into heaven, and is seated at the right hand of God, the Father Almighty; from there He shall come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.";
+
+      var ourFatherTitle = "Say the Our Father";
+      var ourFatherBody = "Our Father, Who art in heaven, hallowed be Thy name; Thy kingdom come, Thy will be done, on earth, as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.";
+
+      var hailMaryThreeTitle = "Pray three Hail Marys";
+      var hailMaryBody = "Hail Mary, full of grace, The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen. X10";
+      var hailMaryTenTitle = "Pray ten Hail Marys";
+      //var hailMaryBody2 = "Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.";
+
+      var gloryBeTitle = "Pray the Glory Be";
+      var gloryBeBody = "Glory be to the Father, to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be; world without end. Amen.";
+
+      var fatimaTitle = "Pray the Fatima Prayer";
+      var fatimaBody = "Oh my Jesus, forgive us our sins, save us from the fires of hell and lead all souls to heaven, especially those in most need of your mercy.";
+
+      var holyQueenTitle = "Say the Hail Holy Queen";
+      var holyQueenBody = "Hail! Holy Queen, Mother of Mercy! Our life, our sweetness, and our hope. To you do we cry, poor banished children of Eve. To you do we send up our sighs, mourning, and weeping in this valley of tears. Turn then, O most gracious Advocate, your eyes of mercy toward us; and after this our exile, show to us the blessed fruit of thy womb, Jesus. O clement! O loving! O sweet Virgin Mary! Pray for us, O Holy Mother of God. That we may be made worthy of the promises of Christ.";
+
+      var firstMysteryOptionTitle = "Meditate on the First Mystery";
+      var firstMysteryTitle = "";
+      var firstMysteryBody = "";
+
+      var secondMysteryOptionTitle = "Meditate on the Second Mystery";
+      var secondMysteryTitle = "";
+      var secondMysteryBody = "";
+
+      var thirdMysteryOptionTitle = "Meditate on the Third Mystery";
+      var thirdMysteryTitle = "";
+      var thirdMysteryBody = "";
+
+      var fourthMysteryOptionTitle = "Meditate on the Fourth Mystery";
+      var fourthMysteryTitle = "";
+      var fourthMysteryBody = "";
+
+      var fifthMysteryOptionTitle = "Meditate on the Fifth Mystery";
+      var fifthMysteryTitle = "";
+      var fifthMysteryBody = "";
+
+      function setMysteries(today){
+        if(today == 0){
+          firstMysteryTitle = "The Resurection";
+          firstMysteryBody = "God the Father raises Jesus from the dead.";
+          secondMysteryTitle = "The Ascension";
+          secondMysteryBody = "Jesus returns to his Father in heaven.";
+          thirdMysteryTitle = "The Coming of the Holy Spirit";
+          thirdMysteryBody = "The Holy Spirit comes to bring new life to the disciples.";
+          fourthMysteryTitle = "The Assumption of Mary";
+          fourthMysteryBody = "At the end of her life on earth, Mary is taken body and soul into heaven.";
+          fifthMysteryTitle = "The Coronation of Mary";
+          fifthMysteryBody = "Mary is crowned as Queen of Heaven and Earth.";
+          return "Sunday";
+        }
+        if(today == 1){
+          firstMysteryTitle = "The Annunciation";
+          firstMysteryBody = "Mary learns that she has been chosen to be the mother of Jesus.";
+          secondMysteryTitle = "The Visitation";
+          secondMysteryBody = "Mary visits Elizabeth, who tells her that she will always be remembered.";
+          thirdMysteryTitle = "The Nativity";
+          thirdMysteryBody = "Jesus is born in a stable in Bethlehem.";
+          fourthMysteryTitle = "The Presentation";
+          fourthMysteryBody = "Mary and Joseph take the infant Jesus to the Temple to present him to God.";
+          fifthMysteryTitle = "The Finding of Jesus in the Temple";
+          fifthMysteryBody = "Jesus is found in the Temple discussing his faith with the teachers.";
+          return "Monday";
+        }
+        if(today == 2){
+          firstMysteryTitle = "The Agony in the Garden";
+          firstMysteryBody = "Jesus prays in the Garden of Gethsemane on the night before he dies.";
+          secondMysteryTitle = "The Scourging at the Pillar";
+          secondMysteryBody = "Jesus is lashed with whips.";
+          thirdMysteryTitle = "The Crowning With Thorns";
+          thirdMysteryBody = "Jesus is mocked and crowned with thorns.";
+          fourthMysteryTitle = "The Carrying of the Cross";
+          fourthMysteryBody = "Jesus carries the cross that will be used to crucify him.";
+          fifthMysteryTitle = "The Crucifixion";
+          fifthMysteryBody = "Jesus is nailed to the cross and dies.";
+          return "Tuesday";
+        }
+        if(today == 3){
+          firstMysteryTitle = "The Resurection";
+          firstMysteryBody = "God the Father raises Jesus from the dead.";
+          secondMysteryTitle = "The Ascension";
+          secondMysteryBody = "Jesus returns to his Father in heaven.";
+          thirdMysteryTitle = "The Coming of the Holy Spirit";
+          thirdMysteryBody = "The Holy Spirit comes to bring new life to the disciples.";
+          fourthMysteryTitle = "The Assumption of Mary";
+          fourthMysteryBody = "At the end of her life on earth, Mary is taken body and soul into heaven.";
+          fifthMysteryTitle = "The Coronation of Mary";
+          fifthMysteryBody = "Mary is crowned as Queen of Heaven and Earth.";
+          return "Wednesday";
+        }
+        if(today == 4){
+          firstMysteryTitle = "The Baptism of Jesus in the River Jordan";
+          firstMysteryBody = "God proclaims that Jesus is his beloved Son.";
+          secondMysteryTitle = "The Wedding Feast at Cana";
+          secondMysteryBody = "At Mary’s request, Jesus performs his first miracle.";
+          thirdMysteryTitle = "The Proclamation of the Kingdom of God";
+          thirdMysteryBody = "Jesus calls all to conversion and service to the Kingdom.";
+          fourthMysteryTitle = "The Transfiguration of Jesus";
+          fourthMysteryBody = "Jesus is revealed in glory to Peter, James, and John.";
+          fifthMysteryTitle = "The Institution of the Eucharist";
+          fifthMysteryBody = "Jesus offers his Body and Blood at the Last Supper.";
+          return "Thursday";
+        }
+        if(today == 5){
+          firstMysteryTitle = "The Agony in the Garden";
+          firstMysteryBody = "Jesus prays in the Garden of Gethsemane on the night before he dies.";
+          secondMysteryTitle = "The Scourging at the Pillar";
+          secondMysteryBody = "Jesus is lashed with whips.";
+          thirdMysteryTitle = "The Crowning With Thorns";
+          thirdMysteryBody = "Jesus is mocked and crowned with thorns.";
+          fourthMysteryTitle = "The Carrying of the Cross";
+          fourthMysteryBody = "Jesus carries the cross that will be used to crucify him.";
+          fifthMysteryTitle = "The Crucifixion";
+          fifthMysteryBody = "Jesus is nailed to the cross and dies.";
+          return "Friday";
+        }
+        if(today == 6){
+          firstMysteryTitle = "The Annunciation";
+          firstMysteryBody = "Mary learns that she has been chosen to be the mother of Jesus.";
+          secondMysteryTitle = "The Visitation";
+          secondMysteryBody = "Mary visits Elizabeth, who tells her that she will always be remembered.";
+          thirdMysteryTitle = "The Nativity";
+          thirdMysteryBody = "Jesus is born in a stable in Bethlehem.";
+          fourthMysteryTitle = "The Presentation";
+          fourthMysteryBody = "Mary and Joseph take the infant Jesus to the Temple to present him to God.";
+          fifthMysteryTitle = "The Finding of Jesus in the Temple";
+          fifthMysteryBody = "Jesus is found in the Temple discussing his faith with the teachers.";
+          return "Saturday";
+        }
+      };
+
+      setMysteries(today);
+
+      jQuery(document).ready(function($){
+
+        $("#startTitle").text(startTitle);
+        $("#startBody").text(startBody);
+
+        $("#optionTitle").text(signCross);
+
+        //Change css color based on function
+        //$("#optionTitle").css(background-color,function(){
+        // Check date and set color by date
+        //change font color to contrast date
+          //});
+        $("#prayerTitle").text(creedTitle);
+        $("#prayerBody").text(apositlesCreed);
+
+        $("#ourFatherTitle1").text(ourFatherTitle);
+        $("#ourFatherBody1").text(ourFatherBody);
+        $("#ourFatherTitle2").text(ourFatherTitle);
+        $("#ourFatherBody2").text(ourFatherBody);
+        $("#ourFatherTitle3").text(ourFatherTitle);
+        $("#ourFatherBody3").text(ourFatherBody);
+        $("#ourFatherTitle4").text(ourFatherTitle);
+        $("#ourFatherBody4").text(ourFatherBody);
+        $("#ourFatherTitle5").text(ourFatherTitle);
+        $("#ourFatherBody5").text(ourFatherBody);
+        $("#ourFatherTitle6").text(ourFatherTitle);
+        $("#ourFatherBody6").text(ourFatherBody);
+        $("#ourFatherTitle7").text(ourFatherTitle);
+        $("#ourFatherBody7").text(ourFatherBody);
+
+        $("#hailMaryThreeTitle").text(hailMaryThreeTitle);
+        $("#hailMaryBody1").text(hailMaryBody);
+        $("#hailMaryTenTitle1").text(hailMaryTenTitle);
+        $("#hailMaryBody2").text(hailMaryBody);
+        $("#hailMaryTenTitle2").text(hailMaryTenTitle);
+        $("#hailMaryBody3").text(hailMaryBody);
+        $("#hailMaryTenTitle3").text(hailMaryTenTitle);
+        $("#hailMaryBody4").text(hailMaryBody);
+        $("#hailMaryTenTitle4").text(hailMaryTenTitle);
+        $("#hailMaryBody5").text(hailMaryBody);
+        $("#hailMaryTenTitle5").text(hailMaryTenTitle);
+        $("#hailMaryBody6").text(hailMaryBody);
+
+        $("#gloryBeTitle1").text(gloryBeTitle);
+        $("#gloryBeBody1").text(gloryBeBody);
+        $("#gloryBeTitle2").text(gloryBeTitle);
+        $("#gloryBeBody2").text(gloryBeBody);
+        $("#gloryBeTitle3").text(gloryBeTitle);
+        $("#gloryBeBody3").text(gloryBeBody);
+        $("#gloryBeTitle4").text(gloryBeTitle);
+        $("#gloryBeBody4").text(gloryBeBody);
+        $("#gloryBeTitle5").text(gloryBeTitle);
+        $("#gloryBeBody5").text(gloryBeBody);
+        $("#gloryBeTitle6").text(gloryBeTitle);
+        $("#gloryBeBody6").text(gloryBeBody);
+
+        $("#fatimaTitle").text(fatimaTitle);
+        $("#fatimaBody").text(fatimaBody);
+        $("#fatimaTitle1").text(fatimaTitle);
+        $("#fatimaBody1").text(fatimaBody);
+        $("#fatimaTitle2").text(fatimaTitle);
+        $("#fatimaBody2").text(fatimaBody);
+        $("#fatimaTitle3").text(fatimaTitle);
+        $("#fatimaBody3").text(fatimaBody);
+        $("#fatimaTitle4").text(fatimaTitle);
+        $("#fatimaBody4").text(fatimaBody);
+        $("#fatimaTitle5").text(fatimaTitle);
+        $("#fatimaBody5").text(fatimaBody);
+
+        $("#holyQueenTitle").text(holyQueenTitle);
+        $("#holyQueenBody").text(holyQueenBody);
+
+        $("#firstMysteryOptionTitle").text(firstMysteryOptionTitle);
+        $("#firstMysteryTitle").text(firstMysteryTitle);
+        $("#firstMysteryBody").text(firstMysteryBody);
+
+        $("#secondMysteryOptionTitle").text(secondMysteryOptionTitle);
+        $("#secondMysteryTitle").text(secondMysteryTitle);
+        $("#secondMysteryBody").text(secondMysteryBody);
+
+        $("#thirdMysteryOptionTitle").text(thirdMysteryOptionTitle);
+        $("#thirdMysteryTitle").text(thirdMysteryTitle);
+        $("#thirdMysteryBody").text(thirdMysteryBody);
+
+        $("#fourthMysteryOptionTitle").text(fourthMysteryOptionTitle);
+        $("#fourthMysteryTitle").text(fourthMysteryTitle);
+        $("#fourthMysteryBody").text(fourthMysteryBody);
+
+        $("#fifthMysteryOptionTitle").text(fifthMysteryOptionTitle);
+        $("#fifthMysteryTitle").text(fifthMysteryTitle);
+        $("#fifthMysteryBody").text(fifthMysteryBody);
+
+      });
+    </script>
+    <div class="title">
+      <a href="http://praytherosary.nyc/" class="title">pray the rosary<a>
+    </div>
+
+      <div class="basicBody">
+
+        <!--Start screen: Removed for redundancy-->
+        <img src="./images/highlighted/none.png" alt="A silver crucifix" id="splashScreen">
+
+        <!--Initial Prayers-->
+        <section class="apostileCreed">
+          <span class="optionTitle" id="optionTitle">???</span>
+          <img src="./images/highlighted/cross.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="prayerTitle">???</span>
+          <span class="prayerBody" id="prayerBody">???</span>
+        </section>
+
+        <section class="ourFatherBody">
+          <img src="./images/highlighted/largeBead.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="ourFatherTitle1">???</span>
+          <span class="prayerBody" id="ourFatherBody1">???</span>
+        </section>
+
+        <section class="hailMaryBody">
+          <img src="./images/highlighted/threeBeads.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="hailMaryThreeTitle">???</span>
+          <span class="prayerBody" id="hailMaryBody1">???</span>
+        </section>
+
+        <section class="gloryBeBody">
+          <img src="./images/highlighted/gloryBe.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="gloryBeTitle1">???</span>
+          <span class="prayerBody" id="gloryBeBody1">???</span>
+        </section>
+
+        <!--First Mystery-->
+        <section class="MysteryBody">
+          <span class="optionTitle" id="firstMysteryOptionTitle">???</span>
+          <span class="prayerTitle" id="firstMysteryTitle">???</span>
+          <span class="prayerBody" id="firstMysteryBody">???</span>
+        </section>
+
+        <section class="ourFatherBody">
+          <img src="./images/highlighted/gloryBe.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="ourFatherTitle2">???</span>
+          <span class="prayerBody" id="ourFatherBody2">???</span>
+        </section>
+
+        <section class="hailMaryBody">
+          <img src="./images/highlighted/firstMystery.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="hailMaryTenTitle1">???</span>
+          <span class="prayerBody" id="hailMaryBody2">???</span>
+        </section>
+
+        <section class="gloryBeBody">
+          <img src="./images/highlighted/firstGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="gloryBeTitle2">???</span>
+          <span class="prayerBody" id="gloryBeBody2">???</span>
+        </section>
+
+        <section class="fatimaBody">
+          <img src="./images/highlighted/firstGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="fatimaTitle">???</span>
+          <span class="prayerBody" id="fatimaBody">???</span>
+        </section>
+
+        <!--Second Mystery-->
+        <section class="MysteryBody">
+          <span class="optionTitle" id="secondMysteryOptionTitle">???</span>
+          <span class="prayerTitle" id="secondMysteryTitle">???</span>
+          <span class="prayerBody" id="secondMysteryBody">???</span>
+        </section>
+
+        <section class="ourFatherBody">
+          <img src="./images/highlighted/firstGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="ourFatherTitle3">???</span>
+          <span class="prayerBody" id="ourFatherBody3">???</span>
+        </section>
+
+        <section class="hailMaryBody">
+          <img src="./images/highlighted/secondMystery.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="hailMaryTenTitle2">???</span>
+          <span class="prayerBody" id="hailMaryBody3">???</span>
+        </section>
+
+        <section class="gloryBeBody">
+          <img src="./images/highlighted/secondGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="gloryBeTitle3">???</span>
+          <span class="prayerBody" id="gloryBeBody3">???</span>
+        </section>
+
+        <section class="fatimaBody">
+          <img src="./images/highlighted/secondGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="fatimaTitle1">???</span>
+          <span class="prayerBody" id="fatimaBody1">???</span>
+        </section>
+
+        <!--Third Mystery-->
+        <section class="MysteryBody">
+          <span class="optionTitle" id="thirdMysteryOptionTitle">???</span>
+          <span class="prayerTitle" id="thirdMysteryTitle">???</span>
+          <span class="prayerBody" id="thirdMysteryBody">???</span>
+        </section>
+
+        <section class="ourFatherBody">
+          <img src="./images/highlighted/secondGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="ourFatherTitle4">???</span>
+          <span class="prayerBody" id="ourFatherBody4">???</span>
+        </section>
+
+        <section class="hailMaryBody">
+          <img src="./images/highlighted/thirdMystery.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="hailMaryTenTitle3">???</span>
+          <span class="prayerBody" id="hailMaryBody4">???</span>
+        </section>
+
+        <section class="gloryBeBody">
+          <img src="./images/highlighted/fourthGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="gloryBeTitle4">???</span>
+          <span class="prayerBody" id="gloryBeBody4">???</span>
+        </section>
+
+        <section class="fatimaBody">
+          <img src="./images/highlighted/fourthGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="fatimaTitle2">???</span>
+          <span class="prayerBody" id="fatimaBody2">???</span>
+        </section>
+
+        <!--Fourth Mystery-->
+        <section class="MysteryBody">
+          <span class="optionTitle" id="fourthMysteryOptionTitle">???</span>
+          <span class="prayerTitle" id="fourthMysteryTitle">???</span>
+          <span class="prayerBody" id="fourthMysteryBody">???</span>
+        </section>
+
+        <section class="ourFatherBody">
+          <img src="./images/highlighted/fourthGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="ourFatherTitle5">???</span>
+          <span class="prayerBody" id="ourFatherBody5">???</span>
+        </section>
+
+        <section class="hailMaryBody">
+          <img src="./images/highlighted/fourthMystery.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="hailMaryTenTitle4">???</span>
+          <span class="prayerBody" id="hailMaryBody5">???</span>
+        </section>
+
+        <section class="gloryBeBody">
+          <img src="./images/highlighted/fifthGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="gloryBeTitle5">???</span>
+          <span class="prayerBody" id="gloryBeBody5">???</span>
+        </section>
+
+        <section class="fatimaBody">
+          <img src="./images/highlighted/fifthGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="fatimaTitle3">???</span>
+          <span class="prayerBody" id="fatimaBody3">???</span>
+        </section>
+
+        <!--Fifth Mystery-->
+        <section class="MysteryBody">
+          <span class="optionTitle" id="fifthMysteryOptionTitle">???</span>
+          <span class="prayerTitle" id="fifthMysteryTitle">???</span>
+          <span class="prayerBody" id="fifthMysteryBody">???</span>
+        </section>
+
+        <section class="ourFatherBody">
+          <img src="./images/highlighted/fifthGlory.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="ourFatherTitle6">???</span>
+          <span class="prayerBody" id="ourFatherBody6">???</span>
+        </section>
+
+        <section class="hailMaryBody">
+          <img src="./images/highlighted/fifthMystery.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="hailMaryTenTitle5">???</span>
+          <span class="prayerBody" id="hailMaryBody6">???</span>
+        </section>
+
+        <section class="gloryBeBody">
+          <img src="./images/highlighted/gloryBe.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="gloryBeTitle6">???</span>
+          <span class="prayerBody" id="gloryBeBody6">???</span>
+        </section>
+
+        <section class="fatimaBody">
+          <img src="./images/highlighted/gloryBe.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="fatimaTitle4">???</span>
+          <span class="prayerBody" id="fatimaBody4">???</span>
+        </section>
+
+        <section class="MysteryBody">
+          <img src="./images/highlighted/gloryBe.png" alt="A silver crucifix">
+          <span class="prayerTitle" id="holyQueenTitle">???</span>
+          <span class="prayerBody" id="holyQueenBody">???</span>
+        </section>
+
+        <footer>
+      		Copyright 2019. James O. and Kevin C.
+      		<a href="privacypolicy.html">Privacy Policy</a>
+      	</footer>
+
+    </div>
+  </body>
 </html>
