@@ -163,6 +163,11 @@ img{
       -webkit-overflow-scrolling: touch;
     }
 
+    #splashScreen{
+      margin-top: 30%;
+      margin-bottom: 40%;
+    }
+
     section {
       scroll-snap-align: start;
       scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
@@ -265,6 +270,11 @@ img{
     -webkit-overflow-scrolling: touch;
   }
 
+  #splashScreen{
+    margin-top: 50%;
+    margin-bottom: 80%;
+  }
+
   section {
     scroll-snap-align: start;
     scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
@@ -316,13 +326,13 @@ img{
 }
 
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 410px){
 
   body{
     display: block;
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin: 0;
     padding: 1px;
     font-family: var(--titleFont);
@@ -368,6 +378,11 @@ img{
     -webkit-overflow-scrolling: touch;
   }
 
+  #splashScreen{
+    margin-top: 65%;
+    margin-bottom: 85%;
+  }
+
   section {
     scroll-snap-align: start;
     scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
@@ -411,7 +426,114 @@ img{
     font-size: 3vh;
     margin-top: 20;
     margin-bottom: 20;
-    min-height: 740px;
+    padding: 15;
+    font-family: var(--bodyFont);
+    font-weight: 550;
+    color: var(--body);
+  }
+}
+
+
+@media screen and (max-width: 350px){
+
+  body{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 1px;
+    font-family: var(--titleFont);
+    font-family: var(--bodyFont);
+    background-color: var(--background);
+  }
+
+  .title{
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--background);
+    border-bottom: 1px solid black;
+  }
+
+  .title a{
+    display: inline-block;
+    position: relative;
+    font-size: 5vw;
+    font-size: 5vh;
+    background-color: var(--background);
+    font-family: var(--oldFonts);
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .basicBody{
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    scroll-snap-type: y mandatory; /* Chrome Canary */
+    scroll-snap-type: mandatory; /* Firefox */
+    -ms-scroll-snap-type: mandatory; /* IE/Edge */
+    -webkit-scroll-snap-type: mandatory; /* Safari */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-stop: always;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #splashScreen{
+    margin-top: 50%;
+    margin-bottom: 60%;
+  }
+
+  section {
+    scroll-snap-align: start;
+    scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
+    -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+    width: 100vw;
+    height: auto;
+  }
+
+.optionTitle{
+    position: relative;
+    display: flex;
+    margin-top: 10;
+    font-size: 4vw;
+    font-size: 4vh;
+    color: var(--title);
+  }
+
+img{
+    position: relative;
+    display: flex;
+    margin: 10% 25% 10% 25%;
+    width: 50vw;
+    height: auto;
+  }
+
+.prayerTitle{
+    position: relative;
+    display: flex;
+    font-size: 4vw;
+    font-size: 4vh;
+    margin-top: 20;
+    font-family: var(--titleFont);
+    font-weight: bold;
+    color: var(--title);
+  }
+
+.prayerBody{
+    position: relative;
+    display: flex;
+    font-size: 3vw;
+    font-size: 3vh;
+    margin-top: 20;
+    margin-bottom: 20;
     padding: 15;
     font-family: var(--bodyFont);
     font-weight: 550;
