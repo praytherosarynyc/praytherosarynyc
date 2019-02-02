@@ -5,6 +5,6 @@ deployment:
  - /bin/cp index.html $DEPLOYPATH
  - /bin/cp privacypolicy.html $DEPLOYPATH
  - /bin/cp .cpanel.yml $DEPLOYPATH
- - /bin/cp none.ico $DEPLOYPATH
+ - /bin/cp favicon.ico $DEPLOYPATH
  - /bin/cp -R stylesheets $DEPLOYPATH/stylesheets
  - /bin/cp -R images $DEPLOYPATH/images
