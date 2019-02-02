@@ -2,7 +2,9 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/upraythe5/public_html/
- - / index.html $DEPLOYPATH
- - / privacypolicy.html $DEPLOYPATH
-  - /-R stylesheets $DEPLOYPATH/stylesheets
- - / -R images $DEPLOYPATH/images
+ - /bin/cp index.html $DEPLOYPATH
+ - /bin/cp privacypolicy.html $DEPLOYPATH
+ - /bin/cp .cpanel.yml $DEPLOYPATH
+ - /bin/cp none.ico $DEPLOYPATH
+ - /bin/cp -R stylesheets $DEPLOYPATH/stylesheets
+ - /bin/cp -R images $DEPLOYPATH/images
