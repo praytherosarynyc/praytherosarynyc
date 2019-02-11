@@ -1,24 +1,34 @@
 :root{
+  /*Fonts*/
   --fallbackFont: 'Lato', sans-serif;
   --oldFont: 'Michroma', sans-serif;
   --oldFonts:  'Amiri', serif;
   --bodyFont: 'Esteban', serif;
   --titleFont: 'Alegreya Sans', sans-serif;
+  /*Colors*/
   --background: FAFAFA;
   --text: 292929;
   --title: 465144;
   --body: 141414;
+  --highlighted: #F27572;
+  /*Display Constants*/
+  --displayBlock: block;
+  --displayTitle: inline-block;
+  --positionRelative: relative;
+  --noDeco: none;
+  --widthFull: 100vw;
+  --heightAuto: auto;
 }
 
 #contact{
   display: block;
   position: relative;
   text-decoration: none;
-  color: #F27572;
+  color: var(--highlighted);
   font: var(--bodyFont);
   font-size: 150%;
-  margin-top: -5%;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #scroll{
@@ -62,20 +72,9 @@ body{
   display: flex;
   flex-direction: column;
   align-content: center;
-  scroll-snap-type: y mandatory; /* Chrome Canary */
-  scroll-snap-type: mandatory; /* Firefox */
-  -ms-scroll-snap-type: mandatory; /* IE/Edge */
-  -webkit-scroll-snap-type: mandatory; /* Safari */
-  overflow-y: scroll;
-  overflow-x: hidden;
-  scroll-snap-stop: always;
-  -webkit-overflow-scrolling: touch;
 }
 
-section {
-  scroll-snap-align: start;
-  scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
-  -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+.section {
   width: 100vw;
   height: auto;
 }
@@ -167,14 +166,6 @@ img{
       display: flex;
       flex-direction: column;
       align-content: center;
-      scroll-snap-type: y mandatory; /* Chrome Canary */
-      scroll-snap-type: mandatory; /* Firefox */
-      -ms-scroll-snap-type: mandatory; /* IE/Edge */
-      -webkit-scroll-snap-type: mandatory; /* Safari */
-      overflow-y: scroll;
-      overflow-x: hidden;
-      scroll-snap-stop: always;
-      -webkit-overflow-scrolling: touch;
     }
 
     #splashScreen{
@@ -184,10 +175,7 @@ img{
       margin-right: 25%;
     }
 
-    section {
-      scroll-snap-align: start;
-      scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
-      -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+  .section {
       width: 100vw;
       height: auto;
     }
@@ -276,14 +264,6 @@ img{
     display: flex;
     flex-direction: column;
     align-content: center;
-    scroll-snap-type: y mandatory; /* Chrome Canary */
-    scroll-snap-type: mandatory; /* Firefox */
-    -ms-scroll-snap-type: mandatory; /* IE/Edge */
-    -webkit-scroll-snap-type: mandatory; /* Safari */
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-stop: always;
-    -webkit-overflow-scrolling: touch;
   }
 
   #splashScreen{
@@ -293,10 +273,7 @@ img{
     margin-right: 25%;
   }
 
-  section {
-    scroll-snap-align: start;
-    scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
-    -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+  .section {
     width: 100vw;
     height: auto;
   }
@@ -386,14 +363,6 @@ img{
     display: flex;
     flex-direction: column;
     align-content: center;
-    scroll-snap-type: y mandatory; /* Chrome Canary */
-    scroll-snap-type: mandatory; /* Firefox */
-    -ms-scroll-snap-type: mandatory; /* IE/Edge */
-    -webkit-scroll-snap-type: mandatory; /* Safari */
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-stop: always;
-    -webkit-overflow-scrolling: touch;
   }
 
   #splashScreen{
@@ -403,10 +372,7 @@ img{
     margin-right: 25%;
   }
 
-  section {
-    scroll-snap-align: start;
-    scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
-    -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+  .section {
     width: 100vw;
     height: auto;
   }
@@ -496,14 +462,6 @@ img{
     display: flex;
     flex-direction: column;
     align-content: center;
-    scroll-snap-type: y mandatory; /* Chrome Canary */
-    scroll-snap-type: mandatory; /* Firefox */
-    -ms-scroll-snap-type: mandatory; /* IE/Edge */
-    -webkit-scroll-snap-type: mandatory; /* Safari */
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-stop: always;
-    -webkit-overflow-scrolling: touch;
   }
 
   #splashScreen{
@@ -513,10 +471,7 @@ img{
     margin-right: 25%;
   }
 
-  section {
-    scroll-snap-align: start;
-    scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */
-    -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */
+  .section {
     width: 100vw;
     height: auto;
   }
