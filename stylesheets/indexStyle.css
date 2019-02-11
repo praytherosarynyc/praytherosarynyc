@@ -10,6 +10,20 @@
   --body: 141414;
 }
 
+#contact{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #F27572;
+  font: var(--bodyFont);
+  font-size: 150%;
+  margin-top: -5%;
+  margin-bottom: 15%;
+}
+
+#scroll{
+  font-size: 175%;
+}
 body{
   display: block;
   position: relative;

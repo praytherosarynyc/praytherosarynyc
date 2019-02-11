@@ -13,11 +13,7 @@
     </script>
 
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Michroma|Pattaya" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100|Lato:100" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Esteban" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100|Amiri|Esteban|Lato:100|Michroma|Pattaya" rel="stylesheet">
 
     <!--Stylesheet-->
     <link rel = "stylesheet" type = "text/css" href = "./stylesheets/indexStyle.css">
@@ -30,7 +26,7 @@
 
     <!--Descriptions-->
     <title>Pray the Rosary</title>
-    <meta name="Description" content="Pray the Rosary, Digitally. Dynamic daily prayers, and visual guide for learning the Holy Rosary.">
+    <meta name="Description" content="Pray the Rosary, Digitally. Dynamic daily prayers, and visual step-by-step guide for learning the Holy Rosary.">
     <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
   </head>
   <body>
@@ -186,11 +182,6 @@
 
         $("#optionTitle").text(signCross);
 
-        //Change css color based on function
-        //$("#optionTitle").css(background-color,function(){
-        // Check date and set color by date
-        //change font color to contrast date
-          //});
         $("#prayerTitle").text(creedTitle);
         $("#prayerBody").text(apositlesCreed);
 
@@ -274,38 +265,46 @@
 
       });
     </script>
+
     <div class="title">
       <a href="http://praytherosary.nyc/" class="title"><span style="color:#F27572;">p</span>ray the <span style="color:#F27572;">r</span>osary<a>
     </div>
 
       <div class="basicBody">
 
-        <!--Start screen: Removed for redundancy-->
-        <img src="./images/highlighted/none.png" alt="A silver crucifix" id="splashScreen">
+        <!--Splash Screen-->
+        <img src="./images/highlighted/none.png" alt="The Holy Rosary" id="splashScreen">
+        <p class="optionTitle" id="scroll">scroll down to continue...</p>
+        <p class="prayerBody">A visual step-by-step walkthrough of how to pray the rosary
+                              <br />
+                              <br />
+                              Mysteries update according to the day</p>
+        <p class="optionTitle">Pray the Rosary every day.</p>
+        <a href="mailto:praytherosarynyc@gmail.com" id="contact">Contact Us</a>
 
         <!--Initial Prayers-->
         <section class="apostileCreed">
           <span class="optionTitle" id="optionTitle">???</span>
           <span class="prayerTitle" id="prayerTitle">???</span>
-          <img src="./images/highlighted/cross.png" alt="A silver crucifix">
+          <img src="./images/highlighted/cross.png" alt="Rosary with Crucifix highlighted">
           <span class="prayerBody" id="prayerBody">???</span>
         </section>
 
         <section class="ourFatherBody">
           <span class="prayerTitle" id="ourFatherTitle1">???</span>
-          <img src="./images/highlighted/largeBead.png" alt="A silver crucifix">
+          <img src="./images/highlighted/largeBead.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="ourFatherBody1">???</span>
         </section>
 
         <section class="hailMaryBody">
           <span class="prayerTitle" id="hailMaryThreeTitle">???</span>
-          <img src="./images/highlighted/threeBeads.png" alt="A silver crucifix">
+          <img src="./images/highlighted/threeBeads.png" alt="Rosary with three small beads highlighted">
           <span class="prayerBody" id="hailMaryThreeBody">???</span>
         </section>
 
         <section class="gloryBeBody">
           <span class="prayerTitle" id="gloryBeTitle1">???</span>
-          <img src="./images/highlighted/gloryBe.png" alt="A silver crucifix">
+          <img src="./images/highlighted/gloryBe.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody1">???</span>
         </section>
 
@@ -318,25 +317,25 @@
 
         <section class="ourFatherBody">
           <span class="prayerTitle" id="ourFatherTitle2">???</span>
-          <img src="./images/highlighted/gloryBe.png" alt="A silver crucifix">
+          <img src="./images/highlighted/gloryBe.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="ourFatherBody2">???</span>
         </section>
 
         <section class="hailMaryBody">
           <span class="prayerTitle" id="hailMaryTenTitle1">???</span>
-          <img src="./images/highlighted/firstMystery.png" alt="A silver crucifix">
+          <img src="./images/highlighted/firstMystery.png" alt="Rosary with Ten Small Beads highlighted">
           <span class="prayerBody" id="hailMaryBody2">???</span>
         </section>
 
         <section class="gloryBeBody">
           <span class="prayerTitle" id="gloryBeTitle2">???</span>
-          <img src="./images/highlighted/firstGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/firstGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody2">???</span>
         </section>
 
         <section class="fatimaBody">
           <span class="prayerTitle" id="fatimaTitle">???</span>
-          <img src="./images/highlighted/firstGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/firstGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody">???</span>
         </section>
 
@@ -349,25 +348,25 @@
 
         <section class="ourFatherBody">
           <span class="prayerTitle" id="ourFatherTitle3">???</span>
-          <img src="./images/highlighted/firstGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/firstGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="ourFatherBody3">???</span>
         </section>
 
         <section class="hailMaryBody">
           <span class="prayerTitle" id="hailMaryTenTitle2">???</span>
-          <img src="./images/highlighted/secondMystery.png" alt="A silver crucifix">
+          <img src="./images/highlighted/secondMystery.png" alt="Rosary with Ten Small Beads highlighted">
           <span class="prayerBody" id="hailMaryBody3">???</span>
         </section>
 
         <section class="gloryBeBody">
           <span class="prayerTitle" id="gloryBeTitle3">???</span>
-          <img src="./images/highlighted/secondGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/secondGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody3">???</span>
         </section>
 
         <section class="fatimaBody">
           <span class="prayerTitle" id="fatimaTitle1">???</span>
-          <img src="./images/highlighted/secondGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/secondGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody1">???</span>
         </section>
 
@@ -380,25 +379,25 @@
 
         <section class="ourFatherBody">
           <span class="prayerTitle" id="ourFatherTitle4">???</span>
-          <img src="./images/highlighted/secondGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/secondGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="ourFatherBody4">???</span>
         </section>
 
         <section class="hailMaryBody">
           <span class="prayerTitle" id="hailMaryTenTitle3">???</span>
-          <img src="./images/highlighted/thirdMystery.png" alt="A silver crucifix">
+          <img src="./images/highlighted/thirdMystery.png" alt="Rosary with Ten Small Beads highlighted">
           <span class="prayerBody" id="hailMaryBody4">???</span>
         </section>
 
         <section class="gloryBeBody">
           <span class="prayerTitle" id="gloryBeTitle4">???</span>
-          <img src="./images/highlighted/fourthGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/fourthGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody4">???</span>
         </section>
 
         <section class="fatimaBody">
           <span class="prayerTitle" id="fatimaTitle2">???</span>
-          <img src="./images/highlighted/fourthGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/fourthGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody2">???</span>
         </section>
 
@@ -411,25 +410,25 @@
 
         <section class="ourFatherBody">
           <span class="prayerTitle" id="ourFatherTitle5">???</span>
-          <img src="./images/highlighted/fourthGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/fourthGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="ourFatherBody5">???</span>
         </section>
 
         <section class="hailMaryBody">
           <span class="prayerTitle" id="hailMaryTenTitle4">???</span>
-          <img src="./images/highlighted/fourthMystery.png" alt="A silver crucifix">
+          <img src="./images/highlighted/fourthMystery.png" alt="Rosary with Ten Small Beads highlighted">
           <span class="prayerBody" id="hailMaryBody5">???</span>
         </section>
 
         <section class="gloryBeBody">
           <span class="prayerTitle" id="gloryBeTitle5">???</span>
-          <img src="./images/highlighted/fifthGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/fifthGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody5">???</span>
         </section>
 
         <section class="fatimaBody">
           <span class="prayerTitle" id="fatimaTitle3">???</span>
-          <img src="./images/highlighted/fifthGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/fifthGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody3">???</span>
         </section>
 
@@ -442,25 +441,25 @@
 
         <section class="ourFatherBody">
           <span class="prayerTitle" id="ourFatherTitle6">???</span>
-          <img src="./images/highlighted/fifthGlory.png" alt="A silver crucifix">
+          <img src="./images/highlighted/fifthGlory.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="ourFatherBody6">???</span>
         </section>
 
         <section class="hailMaryBody">
           <span class="prayerTitle" id="hailMaryTenTitle5">???</span>
-          <img src="./images/highlighted/fifthMystery.png" alt="A silver crucifix">
+          <img src="./images/highlighted/fifthMystery.png" alt="Rosary with Ten Small Beads highlighted">
           <span class="prayerBody" id="hailMaryBody6">???</span>
         </section>
 
         <section class="gloryBeBody">
           <span class="prayerTitle" id="gloryBeTitle6">???</span>
-          <img src="./images/highlighted/gloryBe.png" alt="A silver crucifix">
+          <img src="./images/highlighted/gloryBe.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody6">???</span>
         </section>
 
         <section class="fatimaBody">
           <span class="prayerTitle" id="fatimaTitle4">???</span>
-          <img src="./images/highlighted/gloryBe.png" alt="A silver crucifix">
+          <img src="./images/highlighted/gloryBe.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody4">???</span>
         </section>
 
@@ -471,7 +470,7 @@
         </section>
 
         <footer>
-      		Copyright 2019. James O. and Kevin C.
+      		Copyright 2019.\
       		<a href="privacypolicy.html">Privacy Policy</a>
       	</footer>
 
