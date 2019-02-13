@@ -130,7 +130,7 @@ img{
 }
 
 /*iPad(s)*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1025px){
 
   body{
     display: var(--displayBlock);
@@ -240,7 +240,7 @@ img{
 }
 
 /*Laptops*/
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1281px){
 
     body{
       display: var(--displayBlock);
@@ -350,7 +350,7 @@ img{
 }
 
 /*Large Smartphones*/
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1081px){
 
     body{
       display: var(--displayBlock);
@@ -459,7 +459,7 @@ img{
     }
   }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 801px){
 
     body{
       display: var(--displayBlock);
@@ -568,7 +568,7 @@ img{
     }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 751px){
 
     body{
       display: var(--displayBlock);
@@ -676,7 +676,7 @@ img{
     }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 641px){
 
     body{
       display: var(--displayBlock);
@@ -784,7 +784,7 @@ img{
     }
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 541px){
 
     body{
       display: var(--displayBlock);
@@ -892,115 +892,7 @@ img{
     }
 }
 
-@media screen and (max-width: 540px){
-
-    body{
-      display: var(--displayBlock);
-      position: var(--positionRelative);
-      width: var(--widthFull);
-      height: var(--heightAuto);
-      margin: -2px;
-      padding: 1px;
-      font-family: var(--titleFont);
-      font-family: var(--bodyFont);
-      background-color: var(--background);
-    }
-
-    .title{
-      display: var(--displayTitle);
-      position: var(--positionRelative);
-      width: var(--widthFull);
-      text-align: var(--alignCenter);
-      border-bottom: 1px solid black;
-    }
-
-    .title a{
-      display: var(--displayTitle);
-      position: var(--positionRelative);
-      font-family: var(--oldFonts);
-      font-weight: var(--titleWeight);
-      color: var(--text);
-      text-decoration: var(--noDeco);
-      font-size: 275%;
-    }
-
-    .basicBody{
-      position: var(--positionRelative);
-      width: var(--widthFull);
-      text-align: var(--alignCenter);
-      display: var(--displayBlock);
-      align-content: var(--alignCenter));
-    }
-
-    #splashScreen{
-      margin-top: 52%;
-    }
-
-    #contact{
-      display: var(--displayBlock);
-      position: var(--positionRelative);
-      color: var(--highlighted);
-      font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      text-decoration: var(--noDeco);
-    }
-
-    #scroll{
-      font-size: 275%;
-      margin-top: 51%;
-    }
-
-    .section {
-      width: var(--widthFull);
-      height: var(--heightAuto);
-      margin-left: 0%;
-    }
-
-    .optionTitle{
-      position: var(--positionRelative);
-      display: var(--displayBlock);
-      justify-content: var(--alignCenter);
-      font-size: 250%;
-      color: var(--title);
-    }
-
-    img{
-      position: var(--positionRelative);
-      display: var(--displayBlock);
-      justify-content: var(--alignCenter);
-      width: 45%;
-      height: var(--heightAuto);
-      margin: 5% 27.5% 5% 27.5%;
-    }
-
-    .prayerTitle{
-      position: var(--positionRelative);
-      display: var(--displayBlock);
-      justify-content: var(--alignCenter);
-      font-size: 250%;
-      margin-top: 3%;
-      font-family: var(--titleFont);
-      font-weight: bold;
-      color: var(--title);
-    }
-
-    .prayerBody{
-      position: var(--positionRelative);
-      display: var(--displayBlock);
-      justify-content: var(--alignCenter);
-      font-size: 175%;
-      margin-top: 1%;
-      margin-bottom: 2%;
-      padding: 3%;
-      font-family: var(--bodyFont);
-      font-weight: 550;
-      color: var(--body);
-    }
-}
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 481px){
 
     body{
       display: var(--displayBlock);
@@ -1088,115 +980,6 @@ img{
       display: var(--displayBlock);
       justify-content: var(--alignCenter);
       font-size: 225%;
-      margin-top: 3%;
-      font-family: var(--titleFont);
-      font-weight: bold;
-      color: var(--title);
-    }
-
-    .prayerBody{
-      position: var(--positionRelative);
-      display: var(--displayBlock);
-      justify-content: var(--alignCenter);
-      font-size: 150%;
-      margin-top: 1%;
-      margin-bottom: 2%;
-      padding: 3%;
-      font-family: var(--bodyFont);
-      font-weight: 550;
-      color: var(--body);
-    }
-}
-
-/*Pixel 2*/
-@media screen and (max-width: 411px){
-
-    body{
-      display: var(--displayBlock);
-      position: var(--positionRelative);
-      width: var(--widthFull);
-      height: var(--heightAuto);
-      margin: -2px;
-      padding: 1px;
-      font-family: var(--titleFont);
-      font-family: var(--bodyFont);
-      background-color: var(--background);
-    }
-
-    .title{
-      display: var(--displayTitle);
-      position: var(--positionRelative);
-      width: var(--widthFull);
-      text-align: var(--alignCenter);
-      border-bottom: 1px solid black;
-    }
-
-    .title a{
-      display: var(--displayTitle);
-      position: var(--positionRelative);
-      font-family: var(--oldFonts);
-      font-weight: var(--titleWeight);
-      color: var(--text);
-      text-decoration: var(--noDeco);
-      font-size: 200%;
-    }
-
-    .basicBody{
-      position: var(--positionRelative);
-      width: var(--widthFull);
-      text-align: var(--alignCenter);
-      display: var(--displayBlock);
-      align-content: var(--alignCenter));
-    }
-
-    #splashScreen{
-      margin-top: 52%;
-    }
-
-    #contact{
-      display: var(--displayBlock);
-      position: var(--positionRelative);
-      color: var(--highlighted);
-      font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      text-decoration: var(--noDeco);
-    }
-
-    #scroll{
-      font-size: 200%;
-      margin-top: 51%;
-    }
-
-    .section {
-      width: var(--widthFull);
-      height: var(--heightAuto);
-      margin-left: 0%;
-    }
-
-    .optionTitle{
-      position: var(--positionRelative);
-      display: var(--displayBlock);
-      justify-content: var(--alignCenter);
-      font-size: 200%;
-      color: var(--title);
-    }
-
-    img{
-      position: var(--positionRelative);
-      display: var(--displayBlock);
-      justify-content: var(--alignCenter);
-      width: 45%;
-      height: var(--heightAuto);
-      margin: 5% 27.5% 5% 27.5%;
-    }
-
-    .prayerTitle{
-      position: var(--positionRelative);
-      display: var(--displayBlock);
-      justify-content: var(--alignCenter);
-      font-size: 200%;
       margin-top: 3%;
       font-family: var(--titleFont);
       font-weight: bold;
@@ -1218,7 +1001,116 @@ img{
 }
 
 /*iPhone(s)*/
-@media screen and (max-width: 411px){
+@media screen and (max-width: 415px){
+
+  body{
+    display: var(--displayBlock);
+    position: var(--positionRelative);
+    width: var(--widthFull);
+    height: var(--heightAuto);
+    margin: -2px;
+    padding: 1px;
+    font-family: var(--titleFont);
+    font-family: var(--bodyFont);
+    background-color: var(--background);
+  }
+
+  .title{
+    display: var(--displayTitle);
+    position: var(--positionRelative);
+    width: var(--widthFull);
+    text-align: var(--alignCenter);
+    border-bottom: 1px solid black;
+  }
+
+  .title a{
+    display: var(--displayTitle);
+    position: var(--positionRelative);
+    font-family: var(--oldFonts);
+    font-weight: var(--titleWeight);
+    color: var(--text);
+    text-decoration: var(--noDeco);
+    font-size: 215%;
+  }
+
+  .basicBody{
+    position: var(--positionRelative);
+    width: var(--widthFull);
+    text-align: var(--alignCenter);
+    display: var(--displayBlock);
+    align-content: var(--alignCenter));
+  }
+
+  #splashScreen{
+    margin-top: 52%;
+  }
+
+  #contact{
+    display: var(--displayBlock);
+    position: var(--positionRelative);
+    color: var(--highlighted);
+    font: var(--bodyFont);
+    font-size: 250%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-decoration: var(--noDeco);
+  }
+
+  #scroll{
+    font-size: 175%;
+    margin-top: 51%;
+  }
+
+  .section {
+    width: var(--widthFull);
+    height: var(--heightAuto);
+    margin-left: 0%;
+  }
+
+  .optionTitle{
+    position: var(--positionRelative);
+    display: var(--displayBlock);
+    justify-content: var(--alignCenter);
+    font-size: 175%;
+    color: var(--title);
+  }
+
+  img{
+    position: var(--positionRelative);
+    display: var(--displayBlock);
+    justify-content: var(--alignCenter);
+    width: 45%;
+    height: var(--heightAuto);
+    margin: 5% 27.5% 5% 27.5%;
+  }
+
+  .prayerTitle{
+    position: var(--positionRelative);
+    display: var(--displayBlock);
+    justify-content: var(--alignCenter);
+    font-size: 175%;
+    margin-top: 3%;
+    font-family: var(--titleFont);
+    font-weight: bold;
+    color: var(--title);
+  }
+
+  .prayerBody{
+    position: var(--positionRelative);
+    display: var(--displayBlock);
+    justify-content: var(--alignCenter);
+    font-size: 125%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding: 3%;
+    font-family: var(--bodyFont);
+    font-weight: 550;
+    color: var(--body);
+  }
+}
+
+/*Pixel 2*/
+@media screen and (max-width: 412px){
 
     body{
       display: var(--displayBlock);
@@ -1247,7 +1139,7 @@ img{
       font-weight: var(--titleWeight);
       color: var(--text);
       text-decoration: var(--noDeco);
-      font-size: 215%;
+      font-size: 200%;
     }
 
     .basicBody{
@@ -1274,7 +1166,7 @@ img{
     }
 
     #scroll{
-      font-size: 175%;
+      font-size: 200%;
       margin-top: 51%;
     }
 
@@ -1288,7 +1180,7 @@ img{
       position: var(--positionRelative);
       display: var(--displayBlock);
       justify-content: var(--alignCenter);
-      font-size: 175%;
+      font-size: 200%;
       color: var(--title);
     }
 
@@ -1305,7 +1197,7 @@ img{
       position: var(--positionRelative);
       display: var(--displayBlock);
       justify-content: var(--alignCenter);
-      font-size: 175%;
+      font-size: 200%;
       margin-top: 3%;
       font-family: var(--titleFont);
       font-weight: bold;
@@ -1316,7 +1208,7 @@ img{
       position: var(--positionRelative);
       display: var(--displayBlock);
       justify-content: var(--alignCenter);
-      font-size: 125%;
+      font-size: 150%;
       margin-top: 1%;
       margin-bottom: 2%;
       padding: 3%;
@@ -1327,7 +1219,7 @@ img{
 }
 
 /*Android(s)*/
-@media screen and (max-width: 384px){
+@media screen and (max-width: 385px){
 
     body{
       display: var(--displayBlock);
@@ -1435,7 +1327,7 @@ img{
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 361px){
 
     body{
       display: var(--displayBlock);
@@ -1544,8 +1436,7 @@ img{
 }
 
 /*iPhone 4*/
-
-@media screen and (max-width: 320px){
+@media screen and (max-width: 321px){
 
     body{
       display: var(--displayBlock);
