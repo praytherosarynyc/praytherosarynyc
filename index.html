@@ -42,7 +42,7 @@
       var startBody = "Welcome to Pray the Rosary!";
 
       var signCross = "Make the Sign of the Cross";
-      var creedTitle = "Pray the Apostle's Creed";
+      var creedTitle = "Recite the Apostle's Creed";
       var apositlesCreed = "I believe in God, the Father Almighty, Creator of Heaven and earth, and in Jesus Christ, His only Son, Our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; He descended into Hell; on the third day He arose again from the dead; He ascended into heaven, and is seated at the right hand of God, the Father Almighty; from there He shall come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.";
 
       var ourFatherTitle = "Say the Our Father";
@@ -61,6 +61,12 @@
 
       var holyQueenTitle = "Say the Hail Holy Queen";
       var holyQueenBody = "Hail! Holy Queen, Mother of Mercy! Our life, our sweetness, and our hope. To you do we cry, poor banished children of Eve. To you do we send up our sighs, mourning, and weeping in this valley of tears. Turn then, O most gracious Advocate, your eyes of mercy toward us; and after this our exile, show to us the blessed fruit of thy womb, Jesus. O clement! O loving! O sweet Virgin Mary! Pray for us, O Holy Mother of God. That we may be made worthy of the promises of Christ.";
+
+      var afterRosaryTitle = "Say the Prayer after Rosary";
+      var afterRosaryBody = "O God, whose only-begotten Son, by His life, death and resurrection, has purchased for us the rewards of eternal life; grant, we beseech Thee, that, meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ our Lord. Amen. May the divine assistance remain always with us. And may the souls of the faithful departed, through the mercy of God, rest in peace. Amen.";
+
+      var stMichaelTitle = "Say the Prayer to St. Michael the Archangel";
+      var stMichaelBody = "Saint Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil; May God rebuke him, we humbly pray; And do thou, O Prince of the Heavenly Host, by the power of God, cast into hell satan and all evil spirits who prowl about the world seeking the ruin of souls.";
 
       var firstMysteryOptionTitle = "Meditate on the First Mystery";
       var firstMysteryTitle = "";
@@ -246,6 +252,12 @@
         $("#holyQueenTitle").text(holyQueenTitle);
         $("#holyQueenBody").text(holyQueenBody);
 
+        $("#afterRosaryTitle").text(afterRosaryTitle);
+        $("#afterRosaryBody").text(afterRosaryBody);
+
+        $("#stMichaelTitle").text(stMichaelTitle);
+        $("#stMichaelBody").text(stMichaelBody);
+
         $("#firstMysteryOptionTitle").text(firstMysteryOptionTitle);
         $("#firstMysteryTitle").text(firstMysteryTitle);
         $("#firstMysteryBody").text(firstMysteryBody);
@@ -335,13 +347,13 @@
 
         <div class="section">
           <span class="prayerTitle" id="gloryBeTitle2">???</span>
-          <img src="./images/firstGlory.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/firstMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody2">???</span>
         </div>
 
         <div class="section">
           <span class="prayerTitle" id="fatimaTitle">???</span>
-          <img src="./images/firstGlory.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/firstMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody">???</span>
         </div>
 
@@ -366,13 +378,13 @@
 
         <div class="section">
           <span class="prayerTitle" id="gloryBeTitle3">???</span>
-          <img src="./images/secondGlory.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/secondMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody3">???</span>
         </div>
 
         <div class="section">
           <span class="prayerTitle" id="fatimaTitle1">???</span>
-          <img src="./images/secondGlory.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/secondMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody1">???</span>
         </div>
 
@@ -397,13 +409,13 @@
 
         <div class="section">
           <span class="prayerTitle" id="gloryBeTitle4">???</span>
-          <img src="./images/fourthGlory.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/thirdMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody4">???</span>
         </div>
 
         <div class="section">
           <span class="prayerTitle" id="fatimaTitle2">???</span>
-          <img src="./images/fourthGlory.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/thirdMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody2">???</span>
         </div>
 
@@ -428,13 +440,13 @@
 
         <div class="section">
           <span class="prayerTitle" id="gloryBeTitle5">???</span>
-          <img src="./images/fifthGlory.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/fourthMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody5">???</span>
         </div>
 
         <div class="section">
           <span class="prayerTitle" id="fatimaTitle3">???</span>
-          <img src="./images/fifthGlory.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/fourthMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody3">???</span>
         </div>
 
@@ -459,22 +471,33 @@
 
         <div class="section">
           <span class="prayerTitle" id="gloryBeTitle6">???</span>
-          <img src="./images/gloryBe.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/fifthMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="gloryBeBody6">???</span>
         </div>
 
         <div class="section">
           <span class="prayerTitle" id="fatimaTitle4">???</span>
-          <img src="./images/gloryBe.png" alt="Rosary with Large Bead highlighted">
+          <img src="./images/fifthMystery.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerBody" id="fatimaBody4">???</span>
         </div>
 
         <div class="section">
-          <img src="./images/gloryBe.png" alt="A silver crucifix">
+          <img src="./images/gloryBe.png" alt="Rosary with Large Bead highlighted">
           <span class="prayerTitle" id="holyQueenTitle">???</span>
           <span class="prayerBody" id="holyQueenBody">???</span>
         </div>
 
+        <div class="section">
+          <img src="./images/none.png" alt="Rosary with no beads highlighted">
+          <span class="prayerTitle" id="afterRosaryTitle">???</span>
+          <span class="prayerBody" id="afterRosaryBody">???</span>
+        </div>
+
+        <div class="section">
+          <img src="./images/none.png" alt="Rosary with no beads highlighted">
+          <span class="prayerTitle" id="stMichaelTitle">???</span>
+          <span class="prayerBody" id="stMichaelBody">???</span>
+        </div>
         <footer>
       		Copyright 2019.
       		<a href="privacypolicy.html">Privacy Policy</a>
