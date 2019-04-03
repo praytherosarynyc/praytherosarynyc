@@ -67,7 +67,6 @@ body{
 }
 
 #splashScreen{
-  margin-top: 5%;
 }
 
 #contact{
@@ -75,14 +74,14 @@ body{
   position: var(--positionRelative);
   color: var(--highlighted);
   font: var(--bodyFont);
-  font-size: 150%;
-  margin-top: 5%;
+  font-size: 75%%;
   margin-bottom: 5%;
   text-decoration: var(--noDeco);
 }
 
 #scroll{
-  font-size: 175%;
+  margin-top: -3%;
+  font-size: 75%;
 }
 
 .section {
@@ -175,7 +174,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 5%;
     }
 
     #contact{
@@ -183,14 +181,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 275%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
@@ -284,7 +282,6 @@ img{
   }
 
   #splashScreen{
-    margin-top: 25%;
   }
 
   #contact{
@@ -292,14 +289,14 @@ img{
     position: var(--positionRelative);
     color: var(--highlighted);
     font: var(--bodyFont);
-    font-size: 250%;
-    margin-top: 5%;
+    font-size: 75%%;
     margin-bottom: 5%;
     text-decoration: var(--noDeco);
   }
 
   #scroll{
-    font-size: 275%;
+    margin-top: -3%;
+    font-size: 75%;
   }
 
   .section {
@@ -393,7 +390,6 @@ img{
   }
 
   #splashScreen{
-    margin-top: 15%;
   }
 
   #contact{
@@ -401,14 +397,14 @@ img{
     position: var(--positionRelative);
     color: var(--highlighted);
     font: var(--bodyFont);
-    font-size: 250%;
-    margin-top: 5%;
+    font-size: 75%%;
     margin-bottom: 5%;
     text-decoration: var(--noDeco);
   }
 
   #scroll{
-    font-size: 275%;
+    margin-top: -3%;
+    font-size: 75%;
   }
 
   .section {
@@ -501,7 +497,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 15%;
     }
 
     #contact{
@@ -509,14 +504,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 275%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
@@ -608,7 +603,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 50%;
     }
 
     #contact{
@@ -616,14 +610,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 275%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
@@ -715,7 +709,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 22%;
     }
 
     #contact{
@@ -723,14 +716,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 275%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
@@ -822,7 +815,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 42%;
     }
 
     #contact{
@@ -830,14 +822,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 275%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
@@ -929,7 +921,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 52%;
     }
 
     #contact{
@@ -937,14 +928,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 200%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
@@ -1037,7 +1028,6 @@ img{
   }
 
   #splashScreen{
-    margin-top: 52%;
   }
 
   #contact{
@@ -1045,14 +1035,14 @@ img{
     position: var(--positionRelative);
     color: var(--highlighted);
     font: var(--bodyFont);
-    font-size: 250%;
-    margin-top: 5%;
+    font-size: 75%%;
     margin-bottom: 5%;
     text-decoration: var(--noDeco);
   }
 
   #scroll{
-    font-size: 175%;
+    margin-top: -3%;
+    font-size: 75%;
   }
 
   .section {
@@ -1145,7 +1135,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 22%;
     }
 
     #contact{
@@ -1153,14 +1142,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 200%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
@@ -1253,7 +1242,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 20%;
     }
 
     #contact{
@@ -1261,14 +1249,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 150%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
@@ -1360,7 +1348,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 30%;
     }
 
     #contact{
@@ -1368,14 +1355,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 150%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
@@ -1468,7 +1455,6 @@ img{
     }
 
     #splashScreen{
-      margin-top: 20%;
     }
 
     #contact{
@@ -1476,14 +1462,14 @@ img{
       position: var(--positionRelative);
       color: var(--highlighted);
       font: var(--bodyFont);
-      font-size: 250%;
-      margin-top: 5%;
+      font-size: 75%%;
       margin-bottom: 5%;
       text-decoration: var(--noDeco);
     }
 
     #scroll{
-      font-size: 150%;
+      margin-top: -3%;
+      font-size: 75%;
     }
 
     .section {
