@@ -62,6 +62,10 @@ body{
   align-content: var(--alignCenter));
 }
 
+#description{
+  font-size: 75%;
+}
+
 #splashScreen{
   margin-top: 5%;
 }
@@ -79,7 +83,6 @@ body{
 
 #scroll{
   font-size: 175%;
-  margin-top: 15%;
 }
 
 .section {
@@ -188,7 +191,6 @@ img{
 
     #scroll{
       font-size: 275%;
-      margin-top: 15%;
     }
 
     .section {
@@ -298,7 +300,6 @@ img{
 
   #scroll{
     font-size: 275%;
-    margin-top: 32%;
   }
 
   .section {
@@ -408,7 +409,6 @@ img{
 
   #scroll{
     font-size: 275%;
-    margin-top: 25%;
   }
 
   .section {
@@ -517,7 +517,6 @@ img{
 
     #scroll{
       font-size: 275%;
-      margin-top: 15%;
     }
 
     .section {
@@ -625,7 +624,6 @@ img{
 
     #scroll{
       font-size: 275%;
-      margin-top: 51%;
     }
 
     .section {
@@ -733,7 +731,6 @@ img{
 
     #scroll{
       font-size: 275%;
-      margin-top: 41%;
     }
 
     .section {
@@ -841,7 +838,6 @@ img{
 
     #scroll{
       font-size: 275%;
-      margin-top: 51%;
     }
 
     .section {
@@ -949,7 +945,6 @@ img{
 
     #scroll{
       font-size: 200%;
-      margin-top: 51%;
     }
 
     .section {
@@ -1058,7 +1053,6 @@ img{
 
   #scroll{
     font-size: 175%;
-    margin-top: 51%;
   }
 
   .section {
@@ -1167,7 +1161,6 @@ img{
 
     #scroll{
       font-size: 200%;
-      margin-top: 41%;
     }
 
     .section {
@@ -1276,7 +1269,6 @@ img{
 
     #scroll{
       font-size: 150%;
-      margin-top: 45%;
     }
 
     .section {
@@ -1384,7 +1376,6 @@ img{
 
     #scroll{
       font-size: 150%;
-      margin-top: 45%;
     }
 
     .section {
@@ -1493,7 +1484,6 @@ img{
 
     #scroll{
       font-size: 150%;
-      margin-top: 20%;
     }
 
     .section {
